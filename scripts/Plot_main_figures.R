@@ -1,4 +1,5 @@
 # Code from the manuscript: Insect herbivores drive sex allocation in angiosperm flowers
+
 # Script to plot main figures: the phylogenetic tree and PGLS regressions
 # Last update: 2022.07.27
 # Author: Gustavo Brant Paterno (paternogbc@gmail.com)
@@ -239,39 +240,17 @@ pout +
                   offset=38, offset.text = 9, hjust = .5, fontsize = 2.7) -> g5
 
 # # Figure 1----------------------------------------------------------------------
-# reg <- plot_grid(g1, g2, g3, g4, labels = letters[2:5])
-# reg
-# out <- plot_grid(g5, reg , ncol = 1, rel_heights = c(.85, 1.15), labels = c("a"))
-# out
-# 
-# # save plot
-# ggsave(filename = "output/figures/revision/figure_1.png", 
-#        plot = out, width = 173, height = 247, units = "mm")
-# ggsave(filename = "output/figures/revision/figure_1.pdf", 
-#        plot = out, width = 173, height = 247, units = "mm")
-
-# revision figures
 # Figure 1
 fig1 <- g1 + g5 + plot_annotation(tag_levels = "a")
 
-
 # save plot
-# ggsave(filename = "output/figure_1_v2.png", 
-#        plot = fig1, width = 173, height = 87, units = "mm")
-# # save plot
-# ggsave(filename = "output/figure_1_v2.jpg", 
-#        plot = fig1, width = 173, height = 87, units = "mm")
-# save plot
-ggsave(filename = "output/Figure_1.pdf", 
+ggsave(filename = "output/Figure_1.pdf",  device = cairo_pdf,
        plot = fig1, width = 173, height = 87, units = "mm")
 
 # Figure 2 ----------------------------------------------------------------
 fig2 <- g2 / g3 / g4 + plot_annotation(tag_levels = "a") 
 fig2 + theme(axis.text = element_text(size = 10))
 
-# ggsave(fig2, filename = 'output/Figure_2.png', 
-#        width = 82, height = 246, units = "mm")
-# 
-ggsave(fig2, filename = 'output/Figure_2.pdf',
+ggsave(fig2, filename = 'output/Figure_2.pdf', device = cairo_pdf,
        width = 82, height = 246, units = "mm")
 
