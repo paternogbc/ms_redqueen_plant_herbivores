@@ -17,6 +17,7 @@ library(ggExtra)
 library(psych)       
 library(GGally)      
 library(rr2)
+library(caper)
 
 # source local functions--------------------------------------------------------
 source("scripts/zzz_functions.R")
