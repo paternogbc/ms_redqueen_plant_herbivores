@@ -18,4 +18,4 @@ _Carlos Roberto Fonseca, Martin M. Gossner, Johannes Kollmann, Martin Brändle, 
 
 When using the **data available** in this repository, please cite the original publication and the dataset.
 
-Contact [paternogbc\@gmail.com](mailto:paternogbc@gmail.com){.email} for any further information.
+Contact [paternogbc@gmail.com](mailto:paternogbc@gmail.com){.email} for any further information.
