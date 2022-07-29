@@ -26,6 +26,7 @@ source("scripts/zzz_functions.R")
 set.seed(1234522)
 d <- read_csv("data/full_data.csv")
 t <- read.tree(file = "data/phylogentic_tree_s3_tre")
+d <- as.data.frame(d)
 rownames(d) <- d$tip_name
 
 # Fit PGLS----------------------------------------------------------------------
@@ -43,8 +44,9 @@ model.pgls <- pgls(maleness ~ log2(nspe+1),
 summary(model.pgls)
 par(mfrow = c(2, 2))
 plot(model.pgls)
+dev.off()
 
-# withouth phylogeny
+# without phylogeny
 summary(lm(maleness ~ log2(nspe+1), data = d))
 
 # save model

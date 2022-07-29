@@ -4,7 +4,7 @@ pred_log2x <- function(a, x, b){
   return(y)
 }
 
-# Predict from log(x) linear regression------------------------------------------
+# Predict from linear regression------------------------------------------
 pred_x <- function(a, x, b){
   y <- a + (x)*(b)
   return(y)
