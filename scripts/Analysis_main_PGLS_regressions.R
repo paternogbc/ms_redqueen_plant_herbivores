@@ -1,7 +1,7 @@
 # Code from the manuscript: Insect herbivores drive sex allocation in angiosperm flowers
 
-# Script to run main pgls models between flower maleness against 4 alternative 
-# predictors of insect evolutionary pressure.
+# Script to run main pgls between flower maleness and 4 alternative 
+# proxies of herbivore evolutionary pressure.
 # Last update: 2022.07.27
 # Author: Gustavo Brant Paterno (paternogbc@gmail.com)
 
@@ -32,6 +32,16 @@ rownames(d) <- d$tip_name
 m1 <- phylolm(maleness ~ log2(nspe+1), data = d, phy = t, model = "lambda", boot = 1000)
 summary(m1)
 R2(m1, phy = t)
+
+# Model Diagnostics (USING CAPER)-----
+cdat <- comparative.data(phy = t, data = d,
+                            names.col = tip_name, vcv = TRUE,
+                            na.omit = FALSE, warn.dropped = TRUE)
+model.pgls <- pgls(maleness ~ log2(nspe+1),
+                   data = cdat, lambda = "ML")
+summary(model.pgls)
+par(mfrow = c(2, 2))
+plot(model.pgls)
 
 # withouth phylogeny
 summary(lm(maleness ~ log2(nspe+1), data = d))

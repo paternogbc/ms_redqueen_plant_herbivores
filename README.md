@@ -13,6 +13,9 @@ _Carlos Roberto Fonseca, Martin M. Gossner, Johannes Kollmann, Martin Brändle, 
 3.  **Outputs**: the folder `output` contains the figures, tables and temporary files generated.
 4.  **Code**: the folder `scripts` contains all scripts (.R) that generated results, figures and tables used in the manuscript and in the supporting information.
  
+## Metadata
+
+Inside the folder `data` the file `metadata.html` documents all datasets.
 
 ------------------------------------------------------------------------
 
