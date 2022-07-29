@@ -225,7 +225,10 @@ g7
 gtaxa <- g5 / g6 / g7 + plot_annotation(tag_levels = "a")
 gtaxa + theme(axis.text = element_text(size = 10))
 
+# Save plots
 ggsave(gtaxa, filename = 'output/Figure_3.pdf', device = cairo_pdf,
+       width = 82, height = 246, units = "mm")
+ggsave(gtaxa, filename = 'output/Figure_3.png', 
        width = 82, height = 246, units = "mm")
 
 

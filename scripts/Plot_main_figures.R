@@ -246,6 +246,8 @@ fig1 <- g1 + g5 + plot_annotation(tag_levels = "a")
 # save plot
 ggsave(filename = "output/Figure_1.pdf",  device = cairo_pdf,
        plot = fig1, width = 173, height = 87, units = "mm")
+ggsave(filename = "output/Figure_1.png",  
+       plot = fig1, width = 173, height = 87, units = "mm")
 
 # Figure 2 ----------------------------------------------------------------
 fig2 <- g2 / g3 / g4 + plot_annotation(tag_levels = "a") 
@@ -253,4 +255,5 @@ fig2 + theme(axis.text = element_text(size = 10))
 
 ggsave(fig2, filename = 'output/Figure_2.pdf', device = cairo_pdf,
        width = 82, height = 246, units = "mm")
-
+ggsave(fig2, filename = 'output/Figure_2.png',
+       width = 82, height = 246, units = "mm")
