@@ -24,4 +24,4 @@ Inside the folder `data` the file `metadata.html` documents all datasets.
 
 When using the **data available** in this repository, please cite the original publication and the dataset.
 
-Contact [paternogbc@gmail.com](mailto:paternogbc@gmail.com){.email} for any further information.
+Contact [paternogbc@gmail.com](mailto:paternogbc@gmail.com) for any further information.
