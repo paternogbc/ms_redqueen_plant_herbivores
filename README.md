@@ -1,4 +1,4 @@
-**Code and Data for:**
+**Code and Data for the paper:**
 
 # Insect herbivores drive sex allocation in angiosperm flowers
 
@@ -8,13 +8,12 @@ _Carlos Roberto Fonseca, Martin M. Gossner, Johannes Kollmann, Martin Brändle, 
 
 ## Content of the repository
 
-1.  **Data**: the folder `data` contains
+1.  **Data**: the folder `data` contains all data required to reproduce analyses, figures and tables.
 
-3.  **Outputs**: the folder `outputs` contains
-    -   The figures, tables and temporary files generated.
-4.  **scripts**: the folder `R` contains
-    -   Scripts (.R) to generate all figures and tables used in the manuscript and in the supporting information.
-    
+3.  **Outputs**: the folder `output` contains the figures, tables and temporary files generated.
+4.  **Code**: the folder `scripts` contains all scripts (.R) that generated results, figures and tables used in the manuscript and in the supporting information.
+ 
+
 ------------------------------------------------------------------------
 
 When using the **data available** in this repository, please cite the original publication and the dataset.
